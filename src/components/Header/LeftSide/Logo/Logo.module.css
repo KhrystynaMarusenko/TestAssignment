@@ -1,0 +1,9 @@
+.logoHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 30px;
+}

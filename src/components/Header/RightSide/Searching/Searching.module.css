@@ -1,0 +1,14 @@
+.searchFieldHolder{
+    margin-right: 30px;
+    border: 1px solid #A4A4A4;
+    width: fit-content;
+}
+
+.searchFieldHolder input{
+    border: none;
+}
+
+.searchFieldHolder button{
+    border: none;
+    background-color: transparent;
+}
