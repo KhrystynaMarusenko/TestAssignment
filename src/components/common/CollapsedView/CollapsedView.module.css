@@ -1,0 +1,8 @@
+.collapsedViewHolder{
+    display: flex;
+    position: relative;
+    width: 5%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}

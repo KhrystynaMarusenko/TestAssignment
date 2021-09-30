@@ -1,0 +1,10 @@
+.arrowsHolder{
+    display: flex;
+    flex-direction: column;
+    width: 3%;
+    justify-content: center;
+}
+.arrowsHolder span{
+    display: block;
+    cursor: pointer;
+}
