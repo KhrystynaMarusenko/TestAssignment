@@ -3,7 +3,7 @@ import classes from "./Section.module.css";
 
 const Section = ({sectionNumber}) => {
     return (
-        <a className={classes.section}>
+        <a href='#' className={classes.section}>
             Section {sectionNumber}
         </a>
     )

@@ -8,7 +8,12 @@
     border: none;
 }
 
+.searchFieldHolder input:focus-visible{
+    outline: none;
+}
+
 .searchFieldHolder button{
     border: none;
+    cursor: pointer;
     background-color: transparent;
 }

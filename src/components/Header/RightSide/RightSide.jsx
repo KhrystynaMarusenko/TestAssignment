@@ -3,7 +3,7 @@ import classes from "./RightSide.module.css"
 import TopicsList from "./TopicsList/TopicsList";
 import Searching from "./Searching/Searching";
 
-const RightSide = (props) => {
+const RightSide = () => {
     return (
         <div className={classes.rightSideHolder}>
             <TopicsList/>

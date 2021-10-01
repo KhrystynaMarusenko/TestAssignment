@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./TextContent.module.css";
 
-const TextContent = ({textContentWidth}) => {
+const TextContent = () => {
     return (
         <div className={classes.textHolder}>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id molestiae nihil odit. Animi beatae cumque,

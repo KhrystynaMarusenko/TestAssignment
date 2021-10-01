@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {useTable} from 'react-table';
-import CollapsedView from "../../../common/CollapsedView/CollapsedView";
 import classes from "./Table.module.css";
 
 function Table() {

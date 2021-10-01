@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {Collapse} from 'react-collapse';
 import classes from "./Content.module.css";
 import TextContent from "./TextContent/TextContent";
@@ -10,12 +10,19 @@ let TABLE_WIDTH = 0;
 let TEXT_CONTENT_WIDTH = 0;
 
 const TEXT_ORIENTATION_COLLAPSED_LEFT = {
-    writingMode: 'vertical-rl',
-    textOrientation: 'mixed'
+    style: {
+        writingMode: 'vertical-rl',
+        textOrientation: 'upright'
+    },
+    text: 'COLLAPSED VIEW'
 };
 const TEXT_ORIENTATION_COLLAPSED_RIGHT = {
-    writingMode: 'vertical-rl',
-    textOrientation: 'upright'
+    style: {
+        writingMode: 'vertical-rl',
+        textOrientation: 'mixed'
+    },
+    text: 'FULL SCREEN VIEW'
+
 };
 
 const Content = () => {
@@ -54,7 +61,9 @@ const Content = () => {
                 </Collapse>
             </div>
             }
-            {(TABLE_WIDTH === '10%') && <CollapsedView textOrientation={TEXT_ORIENTATION_COLLAPSED_LEFT}/>}
+            {(TABLE_WIDTH === '10%') && <CollapsedView
+                textOrientation={TEXT_ORIENTATION_COLLAPSED_LEFT.style}
+                text={TEXT_ORIENTATION_COLLAPSED_LEFT.text}/>}
 
             <Arrows isRightArrow={rightArrow}
                     isLeftArrow={leftArrow}
@@ -70,7 +79,9 @@ const Content = () => {
             }
 
 
-            {(TEXT_CONTENT_WIDTH === '10%') && <CollapsedView textOrientation={TEXT_ORIENTATION_COLLAPSED_RIGHT}/>}
+            {(TEXT_CONTENT_WIDTH === '10%') && <CollapsedView
+                textOrientation={TEXT_ORIENTATION_COLLAPSED_RIGHT.style}
+                text={TEXT_ORIENTATION_COLLAPSED_RIGHT.text}/>}
 
 
         </div>

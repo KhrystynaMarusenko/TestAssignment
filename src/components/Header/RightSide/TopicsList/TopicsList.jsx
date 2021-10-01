@@ -5,9 +5,9 @@ const createArray = (length) => [...Array(length)]
 
 const TopicsList = ({topicsCount = 4}) => {
     return (
-        <div>
+        <nav>
             {createArray(topicsCount).map((t, i) => <Topic key={i} topicNumber={i + 1}/>)}
-        </div>
+        </nav>
     )
 }
 

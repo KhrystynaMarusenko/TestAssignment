@@ -6,9 +6,9 @@ const createArray = (length) => [...Array(length)]
 
 const SectionsList = ({listCount = 4}) => {
     return (
-        <div className={classes.sectionsListHolder}>
+        <nav className={classes.sectionsListHolder}>
             {createArray(listCount).map((s, i) => <Section key={i} sectionNumber={i + 1}/>)}
-        </div>
+        </nav>
     )
 }
 

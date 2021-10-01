@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./CollapsedView.module.css";
 
-const CollapsedView = ({textOrientation}) => {
+const CollapsedView = ({textOrientation, text}) => {
     return (
         <div className={classes.collapsedViewHolder} style={textOrientation}>
-            <p>COLLAPSED VIEW</p>
+            <p>{text}</p>
         </div>
     )
 }

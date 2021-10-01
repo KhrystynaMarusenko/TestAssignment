@@ -3,7 +3,7 @@ import classes from "./Topic.module.css"
 
 const Topic = ({topicNumber}) => {
     return (
-        <a className={classes.topic}>
+        <a href='#' className={classes.topic}>
             Topic {topicNumber}
         </a>
     )
