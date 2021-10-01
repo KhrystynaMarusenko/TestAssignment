@@ -110,20 +110,20 @@ function Table() {
     const columns = React.useMemo(
         () => [
             {
-                accessor: 'col1', // accessor is the "key" in the data
+                accessor: 'col1',
             },
             {
                 accessor: 'col2',
             },
             {
                 Header: 'TABLE',
-                accessor: 'col3', // accessor is the "key" in the data
+                accessor: 'col3',
             },
             {
-                accessor: 'col4', // accessor is the "key" in the data
+                accessor: 'col4',
             },
             {
-                accessor: 'col5', // accessor is the "key" in the data
+                accessor: 'col5',
             },
             {
                 accessor: 'col6', // accessor is the "key" in the data
